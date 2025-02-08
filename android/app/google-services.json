@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "289309774276",
+    "project_id": "spinetask",
+    "storage_bucket": "spinetask.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289309774276:android:a638d75d3c7c38677c5491",
+        "android_client_info": {
+          "package_name": "com.example.taskspinecodes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM7x56KzwcOCjoaQZYJ8A4VVDKNKWlyjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
