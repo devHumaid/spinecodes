@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskspinecodes/profile/cubit/profile_cubit.dart';
 import 'package:taskspinecodes/model/user_model.dart';
 
@@ -23,14 +24,14 @@ class Profile extends StatelessWidget {
             } else if (state is ProfileFailure) {
               return Center(
                 child: Text(state.error,
-                    style: const TextStyle(color: Colors.red, fontSize: 18)),
+                    style:  TextStyle(color: Colors.red, fontSize: 18.sp)),
               );
             } else if (state is ProfileLoaded) {
               return _buildProfileUI(state.user);
             } else {
-              return const Center(
+              return  Center(
                   child: Text("No profile data available",
-                      style: TextStyle(fontSize: 18)));
+                      style: TextStyle(fontSize: 18.sp)));
             }
           },
         ),
@@ -45,26 +46,26 @@ class Profile extends StatelessWidget {
       child: Column(
         children: [
           // Profile Avatar
-          const CircleAvatar(
-            radius: 50,
+           CircleAvatar(
+            radius: 50.r,
             backgroundColor: Colors.blueAccent,
-            child: Icon(Icons.person, size: 50, color: Colors.white),
+            child: Icon(Icons.person, size: 50.sp, color: Colors.white),
           ),
-          const SizedBox(height: 10),
+           SizedBox(height: 10.h),
 
           // Name
           Text(
             user.name,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style:  TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 5),
+           SizedBox(height: 5.h),
 
           // Email
           Text(
             user.email,
-            style: const TextStyle(fontSize: 16, color: Colors.grey),
+            style:  TextStyle(fontSize: 16.sp, color: Colors.grey),
           ),
-          const SizedBox(height: 20),
+           SizedBox(height: 20.h),
 
           // Profile Details Card
           Card(
@@ -84,7 +85,7 @@ class Profile extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 20),
+           SizedBox(height: 20.h),
 
           // Edit Profile Button
           ElevatedButton.icon(
@@ -95,8 +96,8 @@ class Profile extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blueAccent,
               foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-              textStyle: const TextStyle(fontSize: 16),
+              padding:  EdgeInsets.symmetric(horizontal: 30.w, vertical: 12.h),
+              textStyle:  TextStyle(fontSize: 16.sp),
             ),
           ),
         ],
@@ -109,7 +110,7 @@ class Profile extends StatelessWidget {
     return ListTile(
       leading: Icon(icon, color: Colors.blueAccent),
       title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
-      subtitle: Text(value, style: const TextStyle(fontSize: 16)),
+      subtitle: Text(value, style:  TextStyle(fontSize: 16.sp)),
     );
   }
 

@@ -31,7 +31,7 @@ class LoginPage extends StatelessWidget {
                         Text(
                           "Login",
                           style: TextStyle(
-                              fontSize: 24,
+                              fontSize: 24.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.black),
                         ),
@@ -46,7 +46,7 @@ class LoginPage extends StatelessWidget {
                           validator: (value) =>
                               value!.isEmpty ? "Enter your email" : null,
                         ),
-                        SizedBox(height: 15),
+                        SizedBox(height: 15.h),
                         TextFormField(
                           controller: cubit.passwordController,
                           obscureText: true,
@@ -70,12 +70,12 @@ class LoginPage extends StatelessWidget {
                           ),
                           child: Text(
                             "Login",
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: TextStyle(fontSize: 18.sp, color: Colors.white),
                           ),
                         ),
                         Text(
                           "Login",
-                          style: TextStyle(fontSize: 18, color: Colors.white),
+                          style: TextStyle(fontSize: 18.sp, color: Colors.white),
                         ),
                         SizedBox(
                           width: double.infinity,

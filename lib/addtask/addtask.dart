@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskspinecodes/addtask/cubit/task_cubit.dart';
 import 'package:taskspinecodes/model/task_model.dart';
 import 'package:taskspinecodes/widgets/custom_textfield.dart';
@@ -101,7 +102,7 @@ class AddTask extends StatelessWidget {
                         validator: (value) =>
                             value == null ? "Select a status" : null,
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(height: 20.h),
 
                       ElevatedButton(
                         onPressed: () {

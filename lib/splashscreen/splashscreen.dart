@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskspinecodes/bottomnavbar/bottom_nav_bar.dart';
 import 'package:taskspinecodes/login/login_page.dart';
 import 'package:taskspinecodes/splashscreen/cubit/splash_cubit.dart';
@@ -34,7 +35,7 @@ class SplashScreen extends StatelessWidget {
                   "Welcome to TaskSpine",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 CircularProgressIndicator(),
               ],
             ),

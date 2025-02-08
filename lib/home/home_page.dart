@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskspinecodes/addtask/cubit/task_cubit.dart';
 import 'package:taskspinecodes/model/task_model.dart';
 
@@ -80,7 +81,7 @@ class HomePage extends StatelessWidget {
                                   : Colors.red.withOpacity(0.2),
                             ),
                           ),
-                          SizedBox(width: 10),
+                          SizedBox(width: 10.w),
                           // Delete Button
                           IconButton(
                             icon: Icon(Icons.delete, color: Colors.red),
